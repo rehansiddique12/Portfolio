@@ -25,10 +25,10 @@ const pathVariants: Variants = {
 };
 
 const secondaryPathVariants: Variants = {
-  normal: { d: "m12 5 7 7-7 7", translateX: 0 },
+  normal: { d: "m12 5 7 7-7 7", x: 0 },
   animate: {
     d: "m12 5 7 7-7 7",
-    translateX: [0, -3, 0],
+    x: [0, -3, 0],
     transition: {
       duration: 0.4,
     },

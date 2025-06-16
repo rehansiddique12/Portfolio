@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useSpring } from "motion/react"
+import { motion, useSpring, useMotionValue } from "motion/react"
 import { type FC, type JSX, useEffect, useRef, useState } from "react"
 
 interface Position {
@@ -83,40 +83,30 @@ export function SmoothCursor({
     restDelta: 0.001,
   },
 }: SmoothCursorProps) {
-  const [isMoving, setIsMoving] = useState(false)
-  const lastMousePos = useRef<Position>({ x: 0, y: 0 })
-  const velocity = useRef<Position>({ x: 0, y: 0 })
-  const lastUpdateTime = useRef(Date.now())
+  const cursorX = useMotionValue(0)
+  const cursorY = useMotionValue(0)
+  const rotation = useMotionValue(0)
+  const scale = useMotionValue(1)
+  const velocity = useRef({ x: 0, y: 0 })
   const previousAngle = useRef(0)
   const accumulatedRotation = useRef(0)
-
-  const cursorX = useSpring(0, springConfig)
-  const cursorY = useSpring(0, springConfig)
-  const rotation = useSpring(0, {
-    ...springConfig,
-    damping: 60,
-    stiffness: 300,
-  })
-  const scale = useSpring(1, {
-    ...springConfig,
-    stiffness: 500,
-    damping: 35,
-  })
+  const lastMousePos = useRef({ x: 0, y: 0 })
+  const lastUpdateTime = useRef(Date.now())
 
   useEffect(() => {
-    const updateVelocity = (currentPos: Position) => {
-      const currentTime = Date.now()
-      const deltaTime = currentTime - lastUpdateTime.current
-
-      if (deltaTime > 0) {
+    const updateVelocity = (currentPos: { x: number; y: number }) => {
+      const now = Date.now()
+      const dt = now - lastUpdateTime.current
+      if (dt > 0) {
+        const dx = currentPos.x - lastMousePos.current.x
+        const dy = currentPos.y - lastMousePos.current.y
         velocity.current = {
-          x: (currentPos.x - lastMousePos.current.x) / deltaTime,
-          y: (currentPos.y - lastMousePos.current.y) / deltaTime,
+          x: dx / dt,
+          y: dy / dt,
         }
+        lastMousePos.current = currentPos
+        lastUpdateTime.current = now
       }
-
-      lastUpdateTime.current = currentTime
-      lastMousePos.current = currentPos
     }
 
     const smoothMouseMove = (e: MouseEvent) => {
@@ -139,11 +129,9 @@ export function SmoothCursor({
         previousAngle.current = currentAngle
 
         scale.set(0.95)
-        setIsMoving(true)
 
         const timeout = setTimeout(() => {
           scale.set(1)
-          setIsMoving(false)
         }, 150)
 
         return () => clearTimeout(timeout)

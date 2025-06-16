@@ -11,8 +11,7 @@ import {
 
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { MousePointer2 } from "lucide-react";
- 
+
 function cx(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
