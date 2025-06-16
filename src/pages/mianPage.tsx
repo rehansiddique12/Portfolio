@@ -3,7 +3,7 @@ import Cards from "@/components/cards";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/heroSection";
 import Navbar from "@/components/navbar";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
+
 
 const MianPage = () => {
   return (
@@ -18,7 +18,7 @@ const MianPage = () => {
       <div id="projects">
         <Cards />
       </div>
-      <SmoothCursor />
+      
       <Footer/>
     </div>
   );

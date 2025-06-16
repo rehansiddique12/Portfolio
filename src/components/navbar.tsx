@@ -39,11 +39,11 @@ const Navbar = () => {
         <div className="py-4 flex flex-row items-center justify-between">
           <div className="w-96 flex items-center">
             <img src={del2} alt="" className="h-14 w-14 rounded-full ml-4 mr-4"/>
-            <p className="text-3xl text-white font-semibold font-myMainFont relative">
-              <span className="relative z-10">M.REHAN</span>
+            <a href="/" className="text-3xl text-white font-semibold font-myMainFont relative cursor-pointer">
+              <span className="relative z-10 ">M.REHAN</span>
               <span className="absolute inset-0 blur-[8px] bg-white/30 rounded-lg -z-10 animate-pulse"></span>
               <span className="absolute inset-0 blur-[15px] bg-white/20 rounded-lg -z-20"></span>
-            </p>
+            </a>
           </div>
           <div className="font-myMainFont">
             <ul className="flex gap-4 text-[#9EABB9] px-2.5 py-2 justify-center items-center">
