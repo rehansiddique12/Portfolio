@@ -64,7 +64,7 @@ const Cards = () => {
         <div>
           <div className="flex items-center justify-between relative">
             <p className="text-white text-5xl font-myMainFont pb-10">
-              PROJECTS
+            My Recent Work
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const Cards = () => {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-block">
-                          <div className="absolute top-0 bottom-0 z-[2] bg-red-30 backdrop-blur-3xl p-8 flex flex-col justify-between ">
+                          <div className="absolute top-0 bottom-0 z-[2] backdrop-blur-3xl p-8 flex flex-col justify-between ">
                             <div className="flex flex-row gap-8 justify-center items-center">
                               <img
                                 src={item.img}

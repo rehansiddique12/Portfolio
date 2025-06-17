@@ -3,6 +3,7 @@ import Cards from "@/components/cards";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/heroSection";
 import Navbar from "@/components/navbar";
+import Skills from "@/components/skills";
 
 
 const MianPage = () => {
@@ -17,6 +18,9 @@ const MianPage = () => {
       </div>
       <div id="projects">
         <Cards />
+      </div>
+      <div>
+        <Skills/>
       </div>
       
       <Footer/>

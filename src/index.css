@@ -170,7 +170,7 @@ html {
     @apply bg-background text-foreground;
   }
 
-/* Webkit Browsers (Chrome, Safari, Edge) */
+/* Webkit Browsers (Chrome, Safari, Edge)
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -183,5 +183,16 @@ html {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, #9333ea, #f97316);
   border-radius: 10px;
+} */
+
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 }
