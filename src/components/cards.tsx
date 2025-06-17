@@ -59,38 +59,38 @@ const buttonsData = [
 ];
 const Cards = () => {
   return (
-    <div className=" p-20">
+    <div className=" p-8 lg:p-20">
       <MaxWidthWrapper>
         <div>
-          <div className="flex items-center justify-between relative">
-            <p className="text-white text-5xl font-myMainFont pb-10">
-            My Recent Work
+          <div className="flex items-center justify-between relative ">
+            <p className="text-white text-2xl md:text-3xl lg:text-5xl font-myMainFont pb-10">
+              My Recent Work
             </p>
           </div>
 
           <Carousel className="w-full ">
             <CarouselContent>
               {buttonsData.map((item) => (
-                <CarouselItem key={item.id} className="md:basis-1/2 ">
+                <CarouselItem key={item.id} className="lg:basis-1/2 ">
                   <div className="p-1">
                     <Card>
-                      <CardContent className="h-[300px] relative ">
+                      <CardContent className=" h-[420px] lg:h-[300px] relative ">
                         <a href={item.url}
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-block">
                           <div className="absolute top-0 bottom-0 z-[2] backdrop-blur-3xl p-8 flex flex-col justify-between ">
-                            <div className="flex flex-row gap-8 justify-center items-center">
+                            <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                               <img
                                 src={item.img}
                                 alt=""
-                                className="h-40 w-72 rounded-3xl"
+                                className="h-30 md:h-50 lg:h-40 md:w-full lg:w-72 rounded-3xl"
                               />
                               <p className="text-white ">{item.aboutpro}</p>
                             </div>
 
-                            <div className="flex justify-between">
-                              <p className="text-4xl text-white">
+                            <div className="flex  justify-between">
+                              <p className=" text-2xl lg:text-4xl text-gray-400">
                                 {item.Projectname}
                               </p>
                               <p className="text-gray-400 text-4xl">
@@ -107,9 +107,9 @@ const Cards = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="absolute -top-16 left-[95%] right-30  ">
-              <CarouselPrevious className="bg-[#0a0a2e] border  cursor-none " />
-              <CarouselNext className=" bg-[#0a0a2e]  border  cursor-none " />
+            <div className="absolute -top-14 lg:-top-16 left-[84%] lg:left-[95%] lg:right-30">
+              <CarouselPrevious className="bg-[#0a0a2e]" />
+              <CarouselNext className=" bg-[#0a0a2e]" />
             </div>
           </Carousel>
         </div>

@@ -1,9 +1,9 @@
-import AboutMe from "@/components/aboutMe";
 import Cards from "@/components/cards";
-import Footer from "@/components/footer";
-import HeroSection from "@/components/heroSection";
-import Navbar from "@/components/navbar";
 import Skills from "@/components/skills";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import AboutMe from "@/components/aboutMe";
+import HeroSection from "@/components/heroSection";
 
 
 const MianPage = () => {
@@ -13,7 +13,7 @@ const MianPage = () => {
       <div id="home">
         <HeroSection />
       </div>
-      <div id="about">
+       <div id="about">
         <AboutMe />
       </div>
       <div id="projects">
@@ -23,7 +23,7 @@ const MianPage = () => {
         <Skills/>
       </div>
       
-      <Footer/>
+      <Footer/> 
     </div>
   );
 };

@@ -7,8 +7,8 @@ const HeroSection = () => {
     <div className="pt-20">
       <BackgroundBeams />
       <MaxWidthWrapper>
-      <div className="h-full py-30  flex justify-center items-center">
-      <p className="text-white text-8xl font-myMainFont text-center ">HI THERE <br /> I'M  <PointerHighlight
+      <div className="h-full pt-16 lg:py-30 flex justify-center items-center">
+      <p className="text-white text-4xl md:text-5xl lg:text-8xl font-myMainFont md:text-center ">HI THERE <br /> I'M  <PointerHighlight
             rectangleClassName="bg-white/10 dark:bg-neutral-70  from-orange-500 to-purple-500 leading-loose"
             pointerClassName="text-yellow-500 h-3 w-3"
             containerClassName="inline-block mr-1"
