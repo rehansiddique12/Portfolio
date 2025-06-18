@@ -63,7 +63,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="px-5 pt-10">
+    <div className="px-5 pt-32">
       <MaxWidthWrapper>
         <div>
           <p className="text-white text-3xl lg:text-5xl font-myMainFont mb-10">

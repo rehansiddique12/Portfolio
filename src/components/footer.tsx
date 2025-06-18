@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div>
       <MaxWidthWrapper>
-        <div className="flex flex-col justify-center items-center pt-20">
+        <div className="flex flex-col justify-center items-center pt-32">
           <p className="text-white font-myMainFont text-4xl md:text-5xl lg:text-7xl  inline-flex text-center ">
             VISION
             <img

@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import AboutMe from "@/components/aboutMe";
 import HeroSection from "@/components/heroSection";
 import { NavbarDemo } from "@/components/navbar";
+import ExperienceSection from "@/components/exp";
 
 
 
@@ -16,7 +17,7 @@ const MianPage = () => {
       </div>
        <div id="about">
         <AboutMe />
-       
+       <ExperienceSection/>
       </div>
       <div id="projects">
         <Cards />

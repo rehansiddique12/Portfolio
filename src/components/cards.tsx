@@ -63,7 +63,7 @@ const Cards = () => {
       <MaxWidthWrapper>
         <div>
           <div className="flex items-center justify-between relative ">
-            <p className="text-white text-2xl md:text-3xl lg:text-5xl font-myMainFont pb-10">
+            <p className="text-white text-2xl md:text-3xl lg:text-5xl font-myMainFont pt-32 pb-10">
               My Recent Work
             </p>
           </div>

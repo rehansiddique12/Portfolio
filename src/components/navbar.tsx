@@ -39,7 +39,7 @@ export function NavbarDemo() {
         {/* Desktop Navigation */}
         <NavBody className="border border-gray-500 mt-5">
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <NavItems items={navItems}  />
           <div className="flex items-center gap-4">
             
             <NavbarButton className="bg-transparent shadow-none"><Animatedbutton/></NavbarButton>
@@ -64,7 +64,7 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 hover:bg-black/30 px-3 rounded-3xl  w-full dark:text-neutral-300 "
+                className="relative text-neutral-600 hover:bg-black/30 px-3 py-1 rounded-3xl  w-full dark:text-neutral-300 "
               >
                 <span className="block">{item.name}</span>
               </a>
