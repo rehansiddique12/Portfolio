@@ -3,7 +3,7 @@ import MaxWidthWrapper from "./max-width-wrapper";
 
 const AboutMe = () => {
   return (
-    <div className="text-2xl text-white  py-32">
+    <div className="text-2xl text-white px-5 md:px-0 py-16 lg:py-32">
       <MaxWidthWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="w-full bg-red-4 px-2 lg:px-20 ">

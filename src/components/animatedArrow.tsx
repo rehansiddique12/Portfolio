@@ -84,9 +84,9 @@ const Animatedbutton = forwardRef<ArrowRightIconHandle, ArrowRightIconProps>(
           rel="noopener noreferrer" 
           className="text-gray-400 text-xl font-light w-full"
         >
-          Say Hi -
+          
           <span className="bg-gradient-to-l to-orange-600 from-purple-600 text-xl font-semibold text-transparent bg-clip-text">
-            rehansiddique962@gmail.com
+           Let's Talk
           </span>
         </a>
         <svg

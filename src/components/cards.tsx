@@ -26,7 +26,7 @@ const buttonsData = [
     id: 2,
     img: project2,
     aboutpro:
-      "A digital platform for Provanta Pharma, focused on managing and showcasing veterinary medicines. The system streamlines operations and supports animal health through reliable pharma solutions.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
     Projectname:"Provante Pharma",
     number: "02",
     url:'https://www.provantapharma.com/',
@@ -59,7 +59,7 @@ const buttonsData = [
 ];
 const Cards = () => {
   return (
-    <div className=" p-8 lg:p-20">
+    <div className="px-5 lg:p-20">
       <MaxWidthWrapper>
         <div>
           <div className="flex items-center justify-between relative ">
@@ -84,13 +84,13 @@ const Cards = () => {
                               <img
                                 src={item.img}
                                 alt=""
-                                className="h-30 md:h-50 lg:h-40 md:w-full lg:w-72 rounded-3xl"
+                                className="h-30 md:h-50 lg:h-40 md:w-64 lg:w-72 rounded-3xl"
                               />
                               <p className="text-white ">{item.aboutpro}</p>
                             </div>
 
-                            <div className="flex  justify-between">
-                              <p className=" text-2xl lg:text-4xl text-gray-400">
+                            <div className="flex justify-between">
+                              <p className=" text-3xl lg:text-4xl text-white">
                                 {item.Projectname}
                               </p>
                               <p className="text-gray-400 text-4xl">

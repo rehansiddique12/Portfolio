@@ -63,10 +63,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div>
+    <div className="px-5 pt-10">
       <MaxWidthWrapper>
         <div>
-          <p className="text-white text-5xl font-myMainFont mb-10">
+          <p className="text-white text-3xl lg:text-5xl font-myMainFont mb-10">
             Skills & Tools
           </p>
           <Marquee autoFill>

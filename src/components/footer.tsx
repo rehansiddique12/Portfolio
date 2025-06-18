@@ -3,22 +3,40 @@ import del2 from "../assets/images/me2.png";
 import MaxWidthWrapper from "./max-width-wrapper";
 import { Separator } from "@/components/ui/separator";
 
+const buttonData = [
+  {
+    id: 1,
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/rehan-siddique-37916b344/",
+  },
+  {
+    id: 2,
+    name: "FaceBook",
+    url: "https://www.facebook.com/profile.php?id=100073708785319",
+  },
+  {
+    id: 3,
+    name: "GitHub",
+    url: "https://github.com/rehansiddique12",
+  },
+];
+
 const Footer = () => {
   return (
     <div>
       <MaxWidthWrapper>
         <div className="flex flex-col justify-center items-center pt-20">
-          <p className="text-white font-myMainFont text-7xl  inline-flex text-center ">
-            LET'S
+          <p className="text-white font-myMainFont text-4xl md:text-5xl lg:text-7xl  inline-flex text-center ">
+            VISION
             <img
               src={del2}
               alt=""
-              className=" h-20 w-20 rounded-full ml-4 mr-4"
+              className="h-12 w-12 lg:h-20 lg:w-20 rounded-full ml-4 mr-4"
             />
-            CREATE
+            TURNING
           </p>
-          <p className="text-white font-myMainFont text-7xl  inline-flex text-center mt-6">
-            GREAT THINGS.
+          <p className="text-white font-myMainFont text-4xl md:text-5xl lg:text-7xl  inline-flex text-center mt-6">
+            INTO REALITY.
           </p>
           <a
             href="https://wa.me/923247848493"
@@ -36,38 +54,26 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="py-6 mt-20  ">
-          <Separator className="bg-gray-500 " />
-          <div className="flex h-5 items-center space-x-4 text-sm text-white">
-            <a href="https://www.linkedin.com/in/rehan-siddique-37916b344/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block">
-            <button className="group hover:text-blue-400 mt-10 relative inline-flex items-center gap-1 px-4 py-3 rounded-full text-white font-medium text-xl font-myMainFont overflow-hidden transition-all duration-300 ">
-              <span className="relative z-10">LinkedIn</span>
-              <ArrowUpRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </button>
-            </a>
-
-            <button className="group hover:text-blue-500 mt-10 relative inline-flex items-center gap-1 px-4 py-3 rounded-full text-white font-medium text-xl font-myMainFont overflow-hidden transition-all duration-300 ">
-              <span className="relative z-10">FaceBook</span>
-              <ArrowUpRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </button>
-
-            <button className="group mt-10 relative inline-flex items-center gap-1 px-4 py-3 rounded-full text-white font-medium text-xl font-myMainFont overflow-hidden transition-all duration-300">
-              <span className="relative z-10 transition-colors duration-300 group-hover:text-[#E1306C]">
-                Instagram
-              </span>
-              <ArrowUpRight className="w-6 h-6 relative z-10  transition-colors duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#E1306C]" />
-            </button>
-
-            <button className="group hover:text-blue-950 mt-10 relative inline-flex items-center gap-1 px-4 py-3 rounded-full text-white font-medium text-xl font-myMainFont overflow-hidden transition-all duration-300 ">
-              <span className="relative z-10">GitHub</span>
-              <ArrowUpRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </button>
+        <div className="p-6 md:py-6 mt-20 ">
+          <Separator className="bg-gray-500" />
+          <div className="flex h-5 items-center lg:space-x-4 text-white ">
+            {buttonData.map((item) => (
+              <a
+                key={item.id}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <button className="group hover:text-blue-400 mt-12 relative inline-flex items-center gap-1 px-2 lg:px-4 lg:py-3 rounded-full text-white font-medium md:text-xl font-myMainFont overflow-hidden transition-all duration-300 ">
+                  <span className="relative z-10">{item.name}</span>
+                  <ArrowUpRight className="w-6 h-6 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </button>
+              </a>
+            ))}
           </div>
-          <div className="">
-            <p className="text-gray-400 text-xl text-end">
+          <div className="hidden md:block">
+            <p className="text-gray-400  text-xl text-end">
               Personal Portfolio © 2025
             </p>
           </div>
