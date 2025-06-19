@@ -54,7 +54,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="p-6 md:py-6 mt-20 ">
+        <div className="p-6 md:py-6 mt-20x` ">
           <Separator className="bg-gray-500" />
           <div className="flex h-5 items-center lg:space-x-4 text-white ">
             {buttonData.map((item) => (
