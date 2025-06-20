@@ -10,17 +10,16 @@ const AboutMe = () => {
             <p className="text-4xl md:text-6xl font-myNameFont ">
               Web Developer Crafting Modern, Responsive Interfaces
             </p>
-            <a 
-              href="https://wa.me/923247848493" 
-              target="_blank" 
+            <a
+              href="https://wa.me/923247848493"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <button className="group mt-10 hidden md:flex relative  items-center gap-2 px-6 py-3 bg-gray-800/80 backdrop-blur-sm border border-gray-700/50 rounded-full text-white font-medium text-lg overflow-hidden transition-all duration-300 hover:border-gray-600/50 hover:shadow-lg hover:shadow-gray-900/25">
+              <button className="cursor-pointer group mt-10 hidden md:flex relative  items-center gap-2 px-6 py-3 bg-gray-800/80 backdrop-blur-sm border border-gray-700/50 rounded-full text-white font-medium text-lg overflow-hidden transition-all duration-300 hover:border-gray-600/50 hover:shadow-lg hover:shadow-gray-900/25">
                 <span className="relative z-10">Contact Us</span>
                 <ArrowUpRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
 
-                {/* Sliding background */}
                 <div className="absolute inset-0 bg-gradient-to-l from-purple-600 to-orange-600 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out" />
               </button>
             </a>
@@ -37,10 +36,10 @@ const AboutMe = () => {
               improving my skills
             </p>
           </div>
-          <div className="flex justify-start pl-2">
-          <a 
-              href="https://wa.me/923247848493" 
-              target="_blank" 
+          <div className="flex justify-start pl-2 cursor-pointer">
+            <a
+              href="https://wa.me/923247848493"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
             >
@@ -48,7 +47,6 @@ const AboutMe = () => {
                 <span className="relative z-10">Contact Us</span>
                 <ArrowUpRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
 
-                {/* Sliding background */}
                 <div className="absolute inset-0 bg-gradient-to-l from-purple-600 to-orange-600 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out" />
               </button>
             </a>

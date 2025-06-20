@@ -1,7 +1,5 @@
+import { CarcsData } from "@/lib/constants";
 import MaxWidthWrapper from "./max-width-wrapper";
-import project1 from "../assets/images/pro2.png";
-import project2 from "../assets/images/pro3.png";
-import project3 from "../assets/images/pro4.png";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -12,51 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const buttonsData = [
-  {
-    id: 1,
-    img: project1,
-    aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Estimaitor",
-    number: "01",
-    url:'https://estim-aitor.vercel.app/auth/login',
-  },
-  {
-    id: 2,
-    img: project2,
-    aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname:"Provante Pharma",
-    number: "02",
-    url:'https://www.provantapharma.com/',
-  },
-  {
-    id: 3,
-    img: project3,
-    aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Rehman Contractors",
-    number: "03",
-    url: 'https://www.rehmancontractors.com.pk/',
-  },
-  {
-    id: 4,
-    img: project1,
-    aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "TrueMail",
-    number: "04",
-  },
-  {
-    id: 5,
-    img: project1,
-    aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Trending",
-    number: "05",
-  },
-];
+
 const Cards = () => {
   return (
     <div className="px-5 lg:p-20">
@@ -70,7 +24,7 @@ const Cards = () => {
 
           <Carousel className="w-full ">
             <CarouselContent>
-              {buttonsData.map((item) => (
+              {CarcsData.map((item) => (
                 <CarouselItem key={item.id} className="lg:basis-1/2 ">
                   <div className="p-1">
                     <Card>

@@ -1,65 +1,6 @@
-import S1 from "../assets/images/github.png";
-import S3 from "../assets/images/bootstrap.png";
-import S4 from "../assets/images/chrome.png";
-import S6 from "../assets/images/html.png";
-import S7 from "../assets/images/javascript.png";
-import S8 from "../assets/images/react.png";
-import S9 from "../assets/images/css.png";
-import S11 from "../assets/images/typescript.png";
-import S10 from "../assets/images/tailwindcss.png";
+import { skills } from "../lib/constants";
 import Marquee from "react-fast-marquee";
 import MaxWidthWrapper from "./max-width-wrapper";
-
-const skills = [
-  {
-    id: 1,
-    img: S1,
-    Projectname: "GitHub",
-  },
-
-  {
-    id: 2,
-    img: S3,
-    Projectname: "Bootstrap",
-  },
-  {
-    id: 3,
-    img: S4,
-    Projectname: "Chrome",
-  },
-
-  {
-    id: 4,
-    img: S6,
-    Projectname: "Html",
-  },
-  {
-    id: 5,
-    img: S7,
-    Projectname: "JavaScript",
-  },
-  {
-    id: 6,
-    img: S8,
-    Projectname: "React",
-  },
-
-  {
-    id: 8,
-    img: S9,
-    Projectname: "Css",
-  },
-  {
-    id: 9,
-    img: S10,
-    Projectname: "TailWindCss",
-  },
-  {
-    id: 7,
-    img: S11,
-    Projectname: "TypeScript",
-  },
-];
 
 const Skills = () => {
   return (
@@ -69,7 +10,7 @@ const Skills = () => {
           <p className="text-white text-3xl lg:text-5xl font-myMainFont mb-10">
             Skills & Tools
           </p>
-          <Marquee autoFill>
+          <Marquee autoFill pauseOnHover gradient gradientColor="black" gradientWidth={60}>
             {skills.map((item) => (
               <div className="p-2 duration-500  hover:scale-105">
                 <div
@@ -86,7 +27,7 @@ const Skills = () => {
               </div>
             ))}
           </Marquee>
-          <Marquee autoFill direction="right">
+          <Marquee autoFill direction="right" pauseOnHover gradient gradientColor="black" gradientWidth={60}>
             {skills.map((item) => (
               <div className="p-2 duration-500  hover:scale-105">
                 <div

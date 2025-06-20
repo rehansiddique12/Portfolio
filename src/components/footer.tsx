@@ -1,25 +1,10 @@
+import { Social_Link_Data } from "@/lib/constants";
 import { ArrowUpRight } from "lucide-react";
-import del2 from "../assets/images/me2.png";
+import Me from "../assets/images/me2.png";
 import MaxWidthWrapper from "./max-width-wrapper";
 import { Separator } from "@/components/ui/separator";
 
-const buttonData = [
-  {
-    id: 1,
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/rehan-siddique-37916b344/",
-  },
-  {
-    id: 2,
-    name: "FaceBook",
-    url: "https://www.facebook.com/profile.php?id=100073708785319",
-  },
-  {
-    id: 3,
-    name: "GitHub",
-    url: "https://github.com/rehansiddique12",
-  },
-];
+
 
 const Footer = () => {
   return (
@@ -29,7 +14,7 @@ const Footer = () => {
           <p className="text-white font-myMainFont text-4xl md:text-5xl lg:text-7xl  inline-flex text-center ">
             VISION
             <img
-              src={del2}
+              src={Me}
               alt=""
               className="h-12 w-12 lg:h-20 lg:w-20 rounded-full ml-4 mr-4"
             />
@@ -57,7 +42,7 @@ const Footer = () => {
         <div className="p-6 md:py-6 mt-20x` ">
           <Separator className="bg-gray-500" />
           <div className="flex h-5 items-center lg:space-x-4 text-white ">
-            {buttonData.map((item) => (
+            {Social_Link_Data.map((item) => (
               <a
                 key={item.id}
                 href={item.url}
