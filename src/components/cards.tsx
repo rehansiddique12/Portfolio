@@ -25,10 +25,10 @@ const Cards = () => {
           <Carousel className="w-full ">
             <CarouselContent>
               {CarcsData.map((item) => (
-                <CarouselItem key={item.id} className="lg:basis-1/2 ">
+                <CarouselItem key={item.id} className="xl:basis-1/2 ">
                   <div className="p-1">
                     <Card>
-                      <CardContent className=" h-[420px] lg:h-[300px] relative ">
+                      <CardContent className=" h-[420px] xl:h-[300px] relative ">
                         <a href={item.url}
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Cards = () => {
                                 alt=""
                                 className="h-30 md:h-50 lg:h-40 md:w-64 lg:w-72 rounded-3xl"
                               />
-                              <p className="text-white ">{item.aboutpro}</p>
+                              <p className="text-white text-center md:text-justify">{item.aboutpro}</p>
                             </div>
 
                             <div className="flex justify-between">
@@ -48,7 +48,7 @@ const Cards = () => {
                                 {item.Projectname}
                               </p>
                               <p className="text-gray-400 text-4xl">
-                                {item.number}{" "}
+                                {item.number}
                               </p>
                             </div>
                           </div>
