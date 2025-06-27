@@ -97,6 +97,7 @@ export const skills = [
 import project1 from "../assets/images/pro2.png";
 import project2 from "../assets/images/pro3.png";
 import project3 from "../assets/images/pro4.png";
+import project4 from "../assets/images/new.png";
 
 export const CarcsData = [
   {
@@ -110,12 +111,12 @@ export const CarcsData = [
   },
   {
     id: 2,
-    img: project2,
+    img: project4,
     aboutpro:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname:"Provante Pharma",
+    Projectname:"Keto Smoke",
     number: "02",
-    url:'https://www.provantapharma.com/',
+    url:'https://keto-smoke.vercel.app/',
   },
   {
     id: 3,
@@ -128,11 +129,12 @@ export const CarcsData = [
   },
   {
     id: 4,
-    img: project1,
+    img: project2,
     aboutpro:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "TrueMail",
+   Projectname:"Provante Pharma",
     number: "04",
+    url:'https://www.provantapharma.com/',
   },
   {
     id: 5,
