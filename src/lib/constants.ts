@@ -98,6 +98,7 @@ import project1 from "../assets/images/pro2.png";
 import project2 from "../assets/images/pro3.png";
 import project3 from "../assets/images/pro4.png";
 import project4 from "../assets/images/new.png";
+import project5 from "../assets/images/vicross.png";
 
 export const CarcsData = [
   {
@@ -138,11 +139,12 @@ export const CarcsData = [
   },
   {
     id: 5,
-    img: project1,
+    img: project5,
     aboutpro:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Trending",
+    Projectname: "Vi Cross",
     number: "05",
+    url:'https://vi-cross-login-2cgo.vercel.app/',
   },
 ];
 
