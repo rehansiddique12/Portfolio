@@ -113,26 +113,26 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   );
 };
 
-export const NavItems = ({ items, className }: NavItemsProps) => {
-  const [hovered, setHovered] = useState<number | null>(null);
-
-  // Function to handle smooth scrolling
-  const scrollToSection = (link: string) => {
-    if (link.startsWith('#')) {
-      const element = document.querySelector(link);
-      if (element) {
-        element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }
-    } else if (link === '/') {
-      window.scrollTo({
-        top: 0,
+// Function to handle smooth scrolling
+export const scrollToSection = (link: string) => {
+  if (link.startsWith('#')) {
+    const element = document.querySelector(link);
+    if (element) {
+      element.scrollIntoView({
         behavior: 'smooth',
+        block: 'start',
       });
     }
-  };
+  } else if (link === '/') {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+};
+
+export const NavItems = ({ items, className }: NavItemsProps) => {
+  const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <motion.div

@@ -1,5 +1,5 @@
 export const ExperienceSectionHeading = "Experience";
-export const ExperienceSectionSubHeading = "My professional journey and work experience";
+export const ExperienceSectionSubHeading = "Skilled in building full-stack web apps with React, TypeScript, Redux Toolkit, and backend tools like Laravel and Django.";
 
 export interface Experience {
   company: string;
@@ -18,7 +18,7 @@ export const ExperienceData: Experience[] = [
     duration: "2025 - Present",
     location: "362 N-Block, Johar Town, Lahore",
     description: "Developed and maintained web applications using modern technologies.",
-    technologies: ["React", "TypeScript", "Python", "Django"],
+    technologies: ["React", "Redux ToolKit", "Tailwind CSS", "TypeScript", "Python"],
     type: "current"
   },
   {
@@ -98,6 +98,7 @@ import project1 from "../assets/images/pro2.png";
 import project2 from "../assets/images/pro3.png";
 import project3 from "../assets/images/pro4.png";
 import project4 from "../assets/images/new.png";
+import project6 from "../assets/images/login2.png";
 import project5 from "../assets/images/vicross.png";
 
 export const CarcsData = [
@@ -105,46 +106,48 @@ export const CarcsData = [
     id: 1,
     img: project1,
     aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Estimaitor",
-    number: "01",
+      "A modern web platform built using React, TypeScript, and Tailwind CSS, enhanced with AOS animations for an engaging user experience, featuring a clean, responsive design optimized for fast performance.",
+   
     url:'https://estim-aitor.vercel.app/auth/login',
   },
   {
     id: 2,
     img: project4,
     aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname:"Keto Smoke",
-    number: "02",
+      "A modern web platform built using React, TypeScript, and Tailwind CSS for seamless user interaction, featuring a clean, responsive design and optimized for fast performance.",
     url:'https://keto-smoke.vercel.app/',
   },
   {
     id: 3,
     img: project3,
     aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Rehman Contractors",
-    number: "03",
+      "A modern web platform built using HTML, CSS, and JavaScript for seamless user interaction. Designed with clean, responsive layouts and optimized for fast performance across all devices.",
+    
     url: 'https://www.rehmancontractors.com.pk/',
   },
   {
     id: 4,
     img: project2,
     aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-   Projectname:"Provante Pharma",
-    number: "04",
+      "A modern web platform built using HTML, CSS, and JavaScript for seamless user interaction. Designed with clean, responsive layouts and optimized for fast performance across all devices.",
+  
     url:'https://www.provantapharma.com/',
   },
   {
     id: 5,
     img: project5,
     aboutpro:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, magni distinctio, cum dolores ad beatae repellat cumque nesciunt incidunt nihil ratione nobis voluptates at facere,",
-    Projectname: "Vi Cross",
-    number: "05",
+      "A modern web platform built using React, TypeScript, and Tailwind CSS, enhanced with AOS animations for an engaging user experience, featuring a clean, responsive design optimized for fast performance.",
+    
     url:'https://vi-cross-login-2cgo.vercel.app/',
+  },
+  {
+    id: 6,
+    img: project6,
+    aboutpro:
+      "A modern registration platform built using React, TypeScript, and Redux Toolkit for efficient API integration. Styled with shadcn/ui for a clean and responsive UI experience.",
+    
+    url:'https://redux-toolkit-react-ts.vercel.app/register',
   },
 ];
 
@@ -168,3 +171,8 @@ export const Social_Link_Data = [
     url: "https://github.com/rehansiddique12",
   },
 ];
+
+
+
+
+

@@ -7,9 +7,12 @@ const Skills = () => {
     <div className="px-5 pt-32">
       <MaxWidthWrapper>
         <div>
-          <p className="text-white text-3xl lg:text-5xl font-myMainFont mb-10">
-            Skills & Tools
-          </p>
+            <div className="flex flex-col items-center">
+              <span className="bg-gradient-to-l  to-orange-700 from-purple-700  font-semibold text-transparent bg-clip-text text-2xl md:text-3xl lg:text-5xl font-myMainFont text-center ">
+              Skills & Tools
+            </span>
+            </div>
+          
           <Marquee autoFill pauseOnHover gradient gradientColor="black" gradientWidth={60}>
             {skills.map((item) => (
               <div className="p-2 duration-500  hover:scale-105">

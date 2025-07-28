@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import MaxWidthWrapper from "./max-width-wrapper";
 import {
   ExperienceData,
-  ExperienceSectionHeading,
   ExperienceSectionSubHeading,
 } from "@/lib/constants";
 
@@ -41,10 +40,11 @@ const ExperienceSection = () => {
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <div className="relative font-myMainFont w-full text-4xl md:text-6xl font-semibold flex justify-center items-center text-white">
-                {ExperienceSectionHeading}
-              </div>
-              <p className="text-white text-base md:text-lg font-medium text-center font-myMainFont mt-3">
+              <span className="bg-gradient-to-l  to-orange-700 from-purple-700  font-semibold text-transparent bg-clip-text text-2xl md:text-3xl lg:text-5xl font-myMainFont pt-32  text-center">
+              Experience
+            </span>
+              
+              <p className="text-white text-base md:text-lg font-medium text-center font-myMainFont mt-3 ">
                 {ExperienceSectionSubHeading}
               </p>
             </motion.div>

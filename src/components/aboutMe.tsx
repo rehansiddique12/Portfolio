@@ -26,14 +26,14 @@ const AboutMe = () => {
           </div>
           <div className="w-full bg-blue- font-myNameFont px-2 md:px-5 lg:px-20">
             <p className="lg:text-justify  text-[20px] text-gray-300">
-              I specialize in using React with TypeScript and Tailwind CSS to
-              create clean and efficient user interfaces. Currently, I'm
-              expanding my knowledge by learning API integration to enhance the
-              functionality of my applications. In addition to frontend
+              I specialize in using React with TypeScript, Tailwind CSS, and
+              Redux Toolkit to create clean and efficient user interfaces.
+              Currently, I'm expanding my knowledge by learning API integration
+              to enhance application functionality. In addition to frontend
               development, I've begun exploring backend technologies, starting
               with Python. I'm diving deeper into Django for web development and
-              using Pandas for data manipulation and analysis. By continuously
-              improving my skills
+              using Pandas for data manipulation and analysis. I'm continuously
+              working to improve and expand my skills.
             </p>
           </div>
           <div className="flex justify-start pl-2 cursor-pointer">
